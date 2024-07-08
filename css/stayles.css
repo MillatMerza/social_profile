@@ -37,7 +37,10 @@ body {
   padding: 2rem;
   background: var(--container-background);
 }
+
 .profile__descreption {
+  box-sizing: border-box;
+  margin-top: 2rem;
   font-weight: 200;
   opacity: 0.8;
 }
@@ -45,7 +48,14 @@ body {
   font-weight: 500;
   color: var(--accent-color);
 }
-
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
 .Profile--img {
   object-fit: cover;
   max-width: 10rem;
