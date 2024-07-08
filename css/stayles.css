@@ -1,0 +1,87 @@
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+:root {
+  --background-color: #000000;
+  --container-background: #1f1f1f;
+  --accent-color: hsl(75, 94%, 57%);
+  --btn-color: #fff;
+  --btn-background-color: hsl(0, 0%, 20%);
+  --textc-color: #fff;
+  --text-hover: black;
+}
+.white-mode {
+  --background-color: #ced3dc;
+  --container-background: #fcf7f8;
+  --accent-color: #6e44ff;
+  --btn-color: #fff;
+  --btn-background-color: #28272e;
+  --textc-color: #000;
+  --text-hover: white;
+}
+body {
+  color: var(--textc-color);
+  align-items: center;
+  background: var(--background-color);
+  display: flex;
+  font-family: "inter", sans-serif, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  background: var(--container-background);
+}
+.profile__descreption {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.profile__location {
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.Profile--img {
+  object-fit: cover;
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+.Profile--img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 0.5px var(--accent-color);
+}
+.btn {
+  border: 0;
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 300px;
+  display: block;
+  padding: 1rem 7rem;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--btn-color);
+  font-size: 1.4rem;
+  width: auto;
+  background: var(--btn-background-color);
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: scale(1.03);
+  background-color: var(--accent-color);
+  color: var(--text-hover);
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: var(--text-hover);
+  opacity: 1;
+}
