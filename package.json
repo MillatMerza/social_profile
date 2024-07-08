@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "cssnano": "^7.0.4",
+    "parcel-bundler": "^1.12.5",
     "postcss": "^8.4.39"
   }
 }
