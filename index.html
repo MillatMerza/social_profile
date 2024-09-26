@@ -12,8 +12,25 @@
       rel="stylesheet"
     />
     <title>ProfilePro</title>
+     <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <style>
+      model-viewer{
+        width: 600px;
+        height:600px;
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
+    <div class="seperate">
+         <model-viewer src="/3d_modesl/xyzschool_hw11draft1.glb" camera-controls auto-rotate ar ios-src="3d_modesl\XYZSchool_HW11DRAFT1.usdz"></model-viewer>
+
+   <div>
+
+   
     <div class="container">
       <img class="Profile--img" src="/images/night.jpg" alt="prfile image" />
       <div class="profile--content">
@@ -28,6 +45,8 @@
       <a href="#" class="btn">Instagram</a>
     </div>
     <button class="btn btn-white">White Mode</button>
+     </div>
+     </div>
   </body>
   <script src="javascript.js"></script>
 </html>
