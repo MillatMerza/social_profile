@@ -19,7 +19,7 @@
     ></script>
     <style>
       model-viewer {
-        width: 400px;
+        width: 500px;
         height: 500px;
         margin: 0 auto;
       }
@@ -33,20 +33,19 @@
       <h1>testign</h1>
       <div class="ppc">
         <model-viewer
-          src="/3d_modesl/xyzschool_hw11draft1.glb"
-          camera-controls
-          auto-rotate
-          ar
-          ios-src="/3d_modesl/XYZSchool_HW11DRAFT1.usdz"
-        ></model-viewer>
-          <div class="ppc"></div>
-        <model-viewer
           src="xyzschool_hw11draft1.glb"
-          camera-controls
-          auto-rotate
           ar
-         
-        ></model-viewer>
+          ar-modes="scene-viewer webxr quick-look"
+          camera-controls
+          tone-mapping="neutral"
+          shadow-intensity="1"
+        >
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          
+        </model-viewer>
       </div>
 
       <div>
